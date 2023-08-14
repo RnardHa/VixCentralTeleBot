@@ -95,7 +95,7 @@ schedule.every().tuesday.at("21:00").do(send_message)
 schedule.every().wednesday.at("21:00").do(send_message)
 schedule.every().thursday.at("21:00").do(send_message)
 schedule.every().friday.at("21:00").do(send_message)
-# schedule.every(10).seconds.do(send_message)
+schedule.every(10).seconds.do(send_message)
 
 while True:
     schedule.run_pending()
